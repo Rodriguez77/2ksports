@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<title>2ksports</title>
+</head>
+<body>
+<section>
+<div class="header">
+	 <div class="navbar" id='nav'>
+
+       <ul>
+       	  <li> <a href="index.html">Home</a></li>
+       	 <li> <a href="games.html">Games</a></li>
+       	   <li> <a href="about.html">About</a></li>
+       	
+       </ul>
+
+	 </div>
+
+</div>
+
+</section>
+
+<section class="body-b">
+>
+	<!-- slideshow -->
+	<div class="slideshow-container">
+  
+  <div class="mySlides fade">
+     <img src="images/1.jpg" style="width:100%">
+     
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/2.jpg" style="width:100%">
+  </div>
+
+    <div class="mySlides fade">
+    <img src="images/3.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/4.jpeg" style="width:100%">
+  </div>
+  
+</div>
+
+
+
+
+<center>
+
+<div class="vidContainer">
+
+	 <img id="logo" src="images/logo.png" style="width:50%">
+<h1 id="NEXT">WELCOME <a id="red">TO THE NEXT </a></h1>
+  
+  <br />
+  <br />	
+    <!-- Insert Video Element Here -->
+    <div id="Vid"> 
+    <video loop autoplay muted>
+     <source src="video/trailer.mp4" type="video/mp4">
+   </div>
+ </video>
+  </div>
+</center>
+
+
+
+
+
+
+
+
+
+<div class="Vbox">
+	
+
+</div>
+
+
+<section id="boxes">
+      <div class="container">
+        <div class="box">
+         <video controls width="420" height="300" loop>
+     <source src="video/myCareer.mp4" type="video/mp4"></video>
+          <h3>MY CAREER</h3>
+         
+        </div>
+        <div class="box">
+  <video controls width="420" height="300" loop>
+     <source src="video/myteam.mp4" type="video/mp4"></video>
+          <h3>MY TEAM</h3>
+        
+        </div>
+        <div class="box">
+        <video controls width="420" height="300" loop>
+     <source src="video/home.mp4" type="video/mp4"></video>
+          <h3>THE NEIGHBORHOOD</h3>
+        
+        </div>
+      </div>
+    </section>
+
+</div>
+
+<section class="product">
+
+<figure class="poster">
+	<img src="images/ad.jpeg" alt="sample41"/>
+	<figcaption>
+		<h2>NBA2K20 <br><span>Standard</span><br>	Edition</h2>
+		<p></p>
+		<a href="#"></a>
+	</figcaption>			
+</figure>
+<figure class="poster">
+	<img src="images/Deluxe-Edition.jpg" alt="sample42"/>
+	<figcaption>
+		<h2>NBA2K20 <br><span>Deluxe</span><br>	Edition</h2>
+		<p>The NBA 2K20 Digital Deluxe Edition includes the following digital items:<br>
+
+-35,000 Virtual Currency<br>
+-10,000 MyTEAM Points<br>
+-10 MyCAREER Skill Boosts<br>
+-MyPLAYER Clothing Capsule<br>
+-10 MyTEAM League packs (delivered one a week)<br>
+-5 Heat Check packs (delivered one a week beginning at the start of the NBA season)<br>
+-1 Sapphire MyTEAM Cover Athlete Card<br></p>
+		<a href="#"></a>
+	</figcaption>			
+</figure>
+<figure class="poster">
+	<img src="images/legend.jpg" alt="sample43"/>
+	<figcaption>
+		<h2>NBA2K20 <br><span>Legend</span><br>	Edition</h2>
+		<p>MyPLAYER Clothing Capsule<br>
+-MyPLAYER Apparel Collection<br>
+-MyPLAYER Shoe Collection<br>
+-20 MyTEAM League packs (delivered one a week)<br>
+-20 Heat Check packs (delivered one a week beginning at the start of the NBA season)<br>
+-5 MyTEAM Theme Packs (one per theme release across the first five releases)<br>
+-2 Sapphire MyTEAM Cover Athlete Card<br></p>
+		<a href="#"></a>
+	</figcaption>			
+</figure>
+
+
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- add some javascript code -->
+
+   <script type="text/javascript">
+   	
+   	 var  nav = document.getElementById('nav');
+      
+      window.onscroll = function(){
+
+      	if (window.pageYOffset >100) {
+
+      		nav.style.background = "black";
+      		nav.style.boxShadow = "0px 4px 2px red";
+      	}
+      	else{
+      		nav.style.background = "transparent";
+      		nav.style.boxShadow = "none";
+      	}
+      }
+</script>
+<script type="text/javascript">
+var slideIndex = 0;
+carousel();
+
+
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+ setTimeout(carousel, 2000);
+}
+
+
+/*--------------------------------
+Here are the individual thumbnails.
+Insert the unique video number for each
+---------------------------------*/
+jQuery('#introVid1').click(function() {
+	$("#videoContainer").show();
+	autoPlayVideo('147842467', '450', '283');
+});
+
+jQuery('#introVid2').click(function() {
+	$("#videoContainer").show();
+	autoPlayVideo('148470865', '450', '283');
+});
+
+jQuery('#introVid3').click(function() {
+	$("#videoContainer").show();
+	autoPlayVideo('148111448', '450', '283');
+});
+
+/*--------------------------------
+This one is the actual video just incase someone clicks on it instead of a thumbnail. It will play the first video
+---------------------------------*/
+jQuery('#introVid4').click(function() {
+	$("#videoContainer").show();
+	autoPlayVideo('147842467', '450', '283');
+});
+
+/*--------------------------------
+  This will swap the previous video with the thumbnail's video and then autoplay
+---------------------------------*/
+
+function autoPlayVideo(vcode, width, height) {
+	"use strict";
+	$("#videoContainer").html('<iframe width="' + width + '" height="' + height + '" src="https://player.vimeo.com/video/' + vcode + '?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+}
+
+
+   </script>
+
+</body>
+</html>

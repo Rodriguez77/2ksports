@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<title>2ksports</title>
+</head>
+<body>
+<section>
+<div class="header">
+	 <div class="navbar" id='nav'>
+
+       <ul>
+       	  <li> <a href="index.html">Home</a></li>
+       	 <li> <a href="games.html">Games</a></li>
+       	   <li> <a href="index.html">About</a></li>
+       
+       	
+       </ul>
+
+	 </div>
+
+</div>
+
+</section>
+
+<section class="body-b">
+>
+	<!-- slideshow -->
+	<div class="slideshow-container">
+  
+  <div class="mySlides fade">
+     <img src="images/1.jpg" style="width:100%">
+     
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/2.jpg" style="width:100%">
+  </div>
+
+    <div class="mySlides fade">
+    <img src="images/3.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/4.jpeg" style="width:100%">
+  </div>
+  
+</div>
+
+
+
+
+<div class="wrapper">
+
+  <div class="about">
+    
+    <div class="about_wrp">
+
+      <div class="about_img">
+    <img src="images/2K-Sports-Logo.png">
+      </div>
+      <h3>2kSports</h3>
+      <p class="role"> COMPANY</p>
+      <p> 2K Sports is a development studio that develops and publishes sports-based video games. Its product portfolio includes NBA 2K series, the NHL 2K series, the WWE 2K series, and MLB 2K series. 2K Sports is a division of 2K Games and was founded in January 2005. The company is headquartered in Novato, California.</p></div>
+   
+  </div>
+</div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- add some javascript code -->
+
+   <script type="text/javascript">
+   	
+   	 var  nav = document.getElementById('nav');
+      
+      window.onscroll = function(){
+
+      	if (window.pageYOffset >100) {
+
+      		nav.style.background = "black";
+      		nav.style.boxShadow = "0px 4px 2px red";
+      	}
+      	else{
+      		nav.style.background = "transparent";
+      		nav.style.boxShadow = "none";
+      	}
+      }
+    </script>
+
+      <script type="text/javascript">
+var slideIndex = 0;
+carousel();
+
+
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+ setTimeout(carousel, 2000);
+}
+
+
+
+</script>
+
+</body>
+</html>
